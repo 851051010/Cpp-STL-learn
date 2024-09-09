@@ -61,6 +61,7 @@ void test03()
 
 	str1 += ',';
 	cout << "str1 = " << str1 << endl;  // str1 = 我爱玩黑神话,
+
 	string str2 = "悟空";
 	str1 += str2;
 	cout << "str1 = " << str1 << endl;  // str1 = 我爱玩黑神话,悟空
@@ -79,16 +80,20 @@ void test04()
 	// 从左往右查找
 	string str1 = "abcdefgde";
 	int pos = str1.find("de");
-	cout << "de第一次出现的位置是：" << pos << endl;  // de第一次出现的位置是：3
+	cout << "de第一次出现的位置是：" << pos << endl;  
+	// de第一次出现的位置是：3
 
 	pos = str1.find("de", 5);
-	cout << "de第二次出现的位置是：" << pos << endl;  // de第二次出现的位置是：7
+	cout << "de第二次出现的位置是：" << pos << endl; 
+	// de第二次出现的位置是：7
 
 	pos = str1.find("fgde", 0, 2);
-	cout << "fg字符出现的位置是：" << pos << endl;  // fg字符出现的位置是：5
+	cout << "fg字符出现的位置是：" << pos << endl; 
+	// fg字符出现的位置是：5
 
 	pos = str1.find('g');
-	cout << "g字符出现的位置是：" << pos << endl;  // g字符出现的位置是：6
+	cout << "g字符出现的位置是：" << pos << endl; 
+	// g字符出现的位置是：6
 	cout << endl;
 }
 
@@ -97,20 +102,26 @@ void test05()
 	// 从右往左进行查找
 	string str1 = "abcdefgde";
 	int pos = str1.rfind("de");
-	cout << "de最后一次出现的位置是：" << pos << endl;  // de最后一次出现的位置是：7
+	cout << "de最后一次出现的位置是：" << pos << endl;  
+	// de最后一次出现的位置是：7
 
 	pos = str1.rfind("de", 5);  // 从下标为5的位置往前找
-	cout << "de从后往前第二次出现的位置是：" << pos << endl; // de从后往前第二次出现的位置是：3
+	cout << "de从后往前第二次出现的位置是：" << pos << endl; 
+	// de从后往前第二次出现的位置是：3
 
 	pos = str1.rfind("fgde", string::npos, 2);
-	cout << "fg最后一次出现的位置是：" << pos << endl;  // fg最后一次出现的位置是：5
+	cout << "fg最后一次出现的位置是：" << pos << endl; 
+	// fg最后一次出现的位置是：5
 
+	string str1 = "abcdefgde";
 	pos = str1.rfind('e');
-	cout << "e最后一次出现的位置是：" << pos << endl;  // e最后一次出现的位置是：8
+	cout << "e最后一次出现的位置是：" << pos << endl; 
+	// e最后一次出现的位置是：8
 
 	// 替换
 	str1.replace(3, 2, "88888");
-	cout << "str1=" << str1 << endl;  // str1=abc88888fgde
+	cout << "str1=" << str1 << endl; 
+	// str1=abc88888fgde
 }
 
 

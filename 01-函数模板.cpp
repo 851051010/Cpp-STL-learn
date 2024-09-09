@@ -43,9 +43,7 @@ void test01()
 	mySwap(num3, num4); //类型一样不写也可以
 	cout << "交换之后：" << "num3=" << num3 << "  num4=" << num4 << endl;
 	// 交换之后：num3=35.12  num4=20.11
-
 	cout << endl;
-
 	char ch1 = 'A', ch2 = 'B';
 	cout << "交换之前：" << "ch1=" << ch1 << "  ch2=" << ch2 << endl;
 	// 交换之前：ch1=A  ch2=B
@@ -130,14 +128,14 @@ template <typename T>
 void myPrint(T a, T b)
 {
 	cout << "模板函数两个参数"; 
-	cout << "a = " << a << "  b = " << b << endl;  // 模板函数两个参数a = A  b = B
+	cout << "a = " << a << "  b = " << b << endl;  a
 }
 // 形参的类型不同
 template <typename T,class E>
 void myPrint(T a, E b)
 {
 	cout << "模板函数两个参数";  
-	cout << "a = " << a << "  b = " << b << endl; // 模板函数两个参数a = 10  b = 20
+	cout << "a = " << a << "  b = " << b << endl; // 模板函数两个参数a = A  b = B
 }
 // 形参的个数不同
 // 三个形参的函数模板
